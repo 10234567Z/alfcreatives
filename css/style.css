@@ -84,23 +84,23 @@ h6,
     position: relative;
     margin-left: 25px;
     padding: 35px 0;
-    color: var(--light) !important;
+    color: #afb6be !important;
     outline: none;
     transition: .5s;
 }
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--dark) !important;
+    color: #afb6be !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #888888 !important;
+    color: #ffffff !important;
 }
 
 .navbar-light .navbar-brand h1 {
-    color: #FFFFFF;
+    color: #cac6c6;
 }
 
 .navbar-light .navbar-brand img {
@@ -115,7 +115,7 @@ h6,
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
-        background: #FFFFFF;
+        background: #888888;
     }
 
     .navbar-light .navbar-collapse {
@@ -127,11 +127,11 @@ h6,
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        color: var(--dark) !important;
+        color: #888888 !important;
     }
 
     .navbar-light .navbar-brand h1 {
-        color: var(--primary);
+        color: #888888;
     }
 
     .navbar-light .navbar-brand img {
@@ -293,6 +293,9 @@ h6,
     transition: .5s;
 }
 
+.service-item p{
+    color: var(--light);
+}
 .service-item:hover h5,
 .service-item:hover p {
     color: var(--light);
@@ -301,7 +304,7 @@ h6,
 .service-item a.btn {
     position: relative;
     display: flex;
-    color: #2125B1;
+    color: #fff;
     transition: .5s;
     z-index: 1;
 }
@@ -318,7 +321,7 @@ h6,
     top: 0;
     left: 0;
     border-radius: 35px;
-    background: #c0c0c0;
+    background: #1435f5;
     transition: .5s;
     z-index: -1;
 }
@@ -386,7 +389,7 @@ h6,
 }
 
 .team-item:hover::after {
-    background: var(--primary);
+    background: #041dff;
 }
 
 .team-item h5,
@@ -415,13 +418,13 @@ h6,
     bottom: -1px;
     border-left: 20px solid transparent;
     border-right: 0 solid transparent;
-    border-bottom: 50px solid #FFFFFF;
+    border-bottom: 50px solid #171717;
 }
 
 #portfolio-flters .btn:hover,
 #portfolio-flters .btn.active {
-    color: var(--light);
-    background: var(--primary);
+    color: #000;
+    background: #fff;
 }
 
 .portfolio-overlay {
@@ -534,12 +537,52 @@ h6,
     border-right: none;
 }
 
-#delayed-text {
-    opacity: 0;  /* Initially hidden */
-    animation: fadeIn 2s ease-in-out forwards; /* Animation definition */
+.navbar-brand img {
+    height: 100px;
+    width: 100px;
+    position: absolute; /* Position it absolutely */
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    z-index: 1000; /* Make sure it's on top */
+  }
+
+#delayed-text span {
+    opacity: 0; /* Start hidden */
+    display: inline-block;
+    animation: fadeIn 1s forwards; /* Animation duration */
+    font-size: 70px;
+    color: #fff;
+  }
+  
+  #delayed-text span:nth-child(1) {
+    animation-delay: 0.5s;
+  }
+  
+  #delayed-text span:nth-child(2) {
+    animation-delay: 1s;
+  }
+  
+  #delayed-text span:nth-child(3) {
+    animation-delay: 1.5s;
+  }
+  
+  #delayed-text span:nth-child(4) {
+    animation-delay: 2s;
+  }
+  
+  #delayed-text span:nth-child(5) {
+    animation-delay: 2.5s;
   }
   
   @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
   }
+
+  
+/* Navbar style */
+.navbar {
+    background-color: transparent; /* Translucent background */
+    transition: background-color 0.3s ease;
+  }
+  

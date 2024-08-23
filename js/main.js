@@ -25,6 +25,20 @@
         }
     });
     
+
+    //new
+    let lastScrollTop = 0;
+  const navbar = document.querySelector('.navbar');
+
+  window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+      navbar.style.top = '-80px'; // Adjust as necessary to hide the navbar
+    } else {
+      navbar.style.top = '0';
+    }
+    lastScrollTop = scrollTop;
+  });
     
     // Dropdown on mouse hover
     const $dropdown = $(".dropdown");
@@ -71,7 +85,7 @@
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1000,
+        smartSpeed: 4000,
         margin: 25,
         dots: false,
         loop: true,
