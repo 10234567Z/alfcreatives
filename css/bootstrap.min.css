@@ -53,8 +53,8 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #000000;
-  background-color: #5a5a5a;
+  color: #d5870d;
+  background-color: #ffffff;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -2548,9 +2548,9 @@ fieldset:disabled .btn {
   opacity: 0.65;
 }
 .btn-primary {
-  color: #fff;
-  background-color: #2124b1;
-  border-color: #2124b1;
+  color: #000;
+  background-color: #d5870d;
+  border-color: #d5870d;
 }
 .btn-primary:hover {
   color: #fff;
@@ -2855,13 +2855,13 @@ fieldset:disabled .btn {
 }
 .btn-dark:disabled,
 .btn-dark.disabled {
-  color: #fff;
+  color: #000;
   background-color: #1d1d27;
   border-color: #1d1d27;
 }
 .btn-outline-primary {
-  color: #2124b1;
-  border-color: #2124b1;
+  color: #d5870d;
+  border-color: #d5870d;
 }
 .btn-outline-primary:hover {
   color: #fff;
@@ -6788,7 +6788,7 @@ fieldset:disabled .btn {
   word-break: break-word !important;
 }
 .text-primary {
-  color: #fff !important;
+  color: #d5870d !important;
 }
 .text-secondary {
   color: #0c4128 !important;
@@ -6857,7 +6857,7 @@ fieldset:disabled .btn {
   background-color: #000 !important;
 }
 .bg-white {
-  background-color: #171717 !important;
+  background-color: #000 !important;
 }
 .bg-transparent {
   background-color: rgba(0, 0, 0, 0) !important;

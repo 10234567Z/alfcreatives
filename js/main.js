@@ -121,3 +121,27 @@
     
 })(jQuery);
 
+
+const heroHeader = document.querySelector('.hero-header');
+
+let posX = 10;
+let posY = 10;
+let angle = 0;
+
+function animateBackground() {
+    posX += 0.1;
+    posY += 0.1;
+    angle += 0.1;
+
+    heroHeader.style.backgroundPosition = `
+        ${posX}px ${posY}px,
+        calc(100% - ${posX}px) calc(100% - ${posY}px),
+        left 55% top ${Math.sin(angle)}px,
+        left 45% bottom ${Math.cos(angle)}px,
+        center bottom ${Math.sin(angle * 2)}px
+    `;
+
+    requestAnimationFrame(animateBackground);
+}
+
+animateBackground();
