@@ -203,11 +203,11 @@ sup {
   top: -0.5em;
 }
 a {
-  color: #2124b1;
+  color: #fff;
   text-decoration: none;
 }
 a:hover {
-  color: #1a1d8e;
+  color: #ffffff;
 }
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {
@@ -595,7 +595,7 @@ progress {
   width: 100%;
   max-width: 100%;
   padding-right: calc(var(--bs-gutter-x) / 2);
-  padding-left: calc(var(--bs-gutter-x) / 2);
+  padding-left:20px;
   margin-top: var(--bs-gutter-y);
 }
 .col {
@@ -760,7 +760,7 @@ progress {
 }
 .g-5,
 .gy-5 {
-  --bs-gutter-y: 3rem;
+  --bs-gutter-y: 1rem;
 }
 @media (min-width: 576px) {
   .col-sm {
@@ -8647,7 +8647,7 @@ fieldset:disabled .btn {
   }
   .px-lg-5 {
     padding-right: 3rem !important;
-    padding-left: 3rem !important;
+    padding-left: 10px !important;
   }
   .py-lg-0 {
     padding-top: 0 !important;
