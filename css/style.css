@@ -36,6 +36,7 @@ h2,
 h3,
 .fw-bold {
     font-weight: 700 !important;
+    color: #fff;
 }
 
 h4,
@@ -43,6 +44,7 @@ h5,
 h6,
 .fw-medium {
     font-weight: 500 !important;
+    color: #fff;
 }
 
 
@@ -389,7 +391,7 @@ h6,
 }
 
 .team-item:hover::after {
-    background: var(--primary);
+    background: #041dff;
 }
 
 .team-item h5,
