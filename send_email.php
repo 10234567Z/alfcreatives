@@ -6,13 +6,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $subject = htmlspecialchars($_POST['subject']);
     $message = htmlspecialchars($_POST['message']);
 
-    // Email address to receive the form submissions
+    // Recipient email address
     $to = 'alfcreativeswork@gmail.com';
+    
+    // Subject of the email
+    $email_subject = "New Contact Form Submission: " . $subject;
+    
+    // Email headers
     $headers = "From: " . $email . "\r\n";
     $headers .= "Reply-To: " . $email . "\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
-    // Prepare the email body
+    // Email body
     $email_body = "<h2>New Contact Form Submission</h2>
                    <p><strong>Name:</strong> {$name}</p>
                    <p><strong>Email:</strong> {$email}</p>
@@ -20,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                    <p><strong>Message:</strong><br>{$message}</p>";
 
     // Send the email
-    if (mail($to, $subject, $email_body, $headers)) {
+    if (mail($to, $email_subject, $email_body, $headers)) {
         echo "<script>alert('Message sent successfully!');</script>";
         echo "<script>window.location.href = 'index.html';</script>"; // Redirect to a thank you or homepage
     } else {
@@ -28,3 +33,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+
