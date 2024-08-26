@@ -199,7 +199,7 @@ h6,
         left 45% bottom -1px,
         center bottom -1px;
     background-repeat: no-repeat;
-    animation: moveBackground 45s infinite linear;
+    animation: moveBackground 5s infinite linear;
 }
 
 @keyframes moveBackground {
